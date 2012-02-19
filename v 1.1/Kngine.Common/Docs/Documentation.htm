@@ -1,0 +1,94 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+	    <style type="text/css">
+            .style1
+            {
+                direction: ltr;
+            }
+        </style>
+	</head>
+	<body>
+	
+	    <p>
+            Kngine.Common is project that contain only the very common stuff that likily to 
+            be used from many other projects. This project contains the following:</p>
+        <ul>
+            <li style="direction: ltr">Fast Invoker - Kngine.Reflection.FastInvoker: Which is 
+                subsystem to get and set properties and fields and invoke methods very fast 
+                compared to .NET Refelection.</li>
+            <li>Compressing - Kngine.IO.Compression: This namespace contains a Aced Deflator 
+                compression (LZ77 algorithm and Huffman coding similar) and QuickLZ.</li>
+            <li>LINQ - Kngine.LINQ: This namespace contains some common extention methods to 
+                process lists and objects.</li>
+            <li>Kngine.Strings:<ul>
+                <li>English Stemmer</li>
+                <li class="style1">Very Simple Tokenizer</li>
+                <li class="style1">SoundEx</li>
+                <li class="style1">String Operation - which include fast implemtnation for IndexOf 
+                    method</li>
+                </ul>
+            </li>
+            <li>Others:<ul>
+                <li class="style1">Kngine.Utilities: Contains common utilities methods such as:<ul>
+                    <li class="style1">&nbsp;FreeMemory: Get free memory in the system</li>
+                    <li class="style1">Seralize and Deseralize using different systems like: Protocol 
+                        Buffer, .NET Seralizeation, and Convert object to string after .NET Seralization 
+                        also there are option to compress the seralized bytes using 
+                        Kngine.IO.Compression</li>
+                    </ul>
+                </li>
+                <li class="style1">IPUtilities: Contains common utilities for machine network IPs</li>
+                <li class="style1">Kngine.Configuration.Configer: This static class allows you to 
+                    load and save configuration file that follow Kngine specificiation into object. 
+                    See how it&#39;s works below.</li>
+                <li class="style1">Kngine.Configuration.Kngine.Logger: This is basic logging class 
+                    that generate logging file.</li>
+                <li class="style1">Kngine.Threading: include Asyn which include our implementation 
+                    for C# 5.0 Asyn feature</li>
+                <li class="style1"></li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            &nbsp;</p>
+        <p>
+            <b>How Kngine Configuration works:<br />
+            </b>To create configuration inside your application just create a class that 
+            have string fields with the default values, make this class singelton and when 
+            you try to get the instance call Configer.LoadFromFile()<br />
+            This method load the file that follow our specification, which is:</p>
+        <ul>
+            <li>Text file, where every line contain different information</li>
+            <li>Every line follow the following standard: {field name}={value}</li>
+        </ul>
+        <p>
+            The LoadFromFile method read the file lines and tries to split the line using 
+            &#39;=&#39; then it try to find a field inside your configuration class and then assume 
+            it the value. We assume that all the fields is string.</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <b>Wish list for future:</b></p>
+        <ul>
+            <li>
+                <p style="text-align: left">
+                    Implement Snappy Compression (Google)</p>
+            </li>
+            <li>
+                <p style="text-align: left">
+                    Finish our Kngine.JSON and include it</p>
+            </li>
+        </ul>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+	
+	</body>
+</html>
