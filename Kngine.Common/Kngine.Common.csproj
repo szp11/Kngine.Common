@@ -47,9 +47,13 @@
   <ItemGroup>
     <Compile Include="Arguments.cs" />
     <Compile Include="Configuration\CachedLogger.cs" />
-    <None Include="Configuration\OLD Logger.cs" />
     <Compile Include="Configuration\ExMethods.cs" />
     <Compile Include="Configuration\LogItem.cs" />
+    <Compile Include="Serializer\CodeGenerator\DeserializerCodeGen.cs" />
+    <Compile Include="Serializer\CodeGenerator\SerializerCodeGen.cs" />
+    <Compile Include="Serializer\DataStructure.cs" />
+    <Compile Include="Serializer\Primitives.cs" />
+    <Compile Include="Serializer\Serializer.cs" />
     <Compile Include="Strings\SoundEx.cs" />
     <Compile Include="Strings\Stemmer.cs" />
     <Compile Include="Strings\StringOperations.cs" />
@@ -70,6 +74,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Threading\Asyn.cs" />
     <Compile Include="ThreadPoolTimeoutWorkaround.cs" />
+    <Compile Include="Strings\UTF8String.cs" />
     <Compile Include="Utilities.cs" />
     <Compile Include="IPUtilities.cs" />
   </ItemGroup>

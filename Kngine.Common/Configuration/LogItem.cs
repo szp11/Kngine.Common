@@ -18,17 +18,17 @@ namespace Kngine.Configuration
 
 
 
-        public void ToRecordString(StringBuilder sb)
+        public void AppendLineToStringBuilder(ref StringBuilder sb)
         {
-            if (sb == null) sb = new StringBuilder();
             sb.Append("LOG BEGIN\t" + Date.Year + "-" + Date.Month + "-" + Date.Day + "\t" + Date.Hour + ":" + Date.Minute + ":" + Date.Second + ":" + Date.Millisecond + "\t" +
                       Type.ToString() + "\t" + Message.Replace("\t", "").Replace("\r", ""));
 
-            if (Objects != null && Objects.Length == 0)
+            if (Objects != null && Objects.Length > 0)
             {
                 for (int i = 0; i < Objects.Length; i++)
                 {
                     var item = Objects[i];
+                    if (item == null) continue;
                     sb.Append("\t" + ConvertObjectToString(item));
                 }
             }

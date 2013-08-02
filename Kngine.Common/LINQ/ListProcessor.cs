@@ -136,6 +136,34 @@ namespace Kngine.LINQ
             return TR;
         }
 
+        public static List<TSource> TakeLast<TSource>(this List<TSource> list, int n)
+        {
+            int l = Math.Min(n, list.Count);
+            List<TSource> L = new List<TSource>(l);
+            if (n >= list.Count)
+                L.AddRange(list);
+            else
+            {
+                for (int i = list.Count - n; i < list.Count; i++)
+                    L.Add(list[i]);
+            }
+
+            return L;
+        }
+
+        public static void RemoveAndKeepLast<TSource>(this List<TSource> list, int n)
+        {
+            int l = Math.Min(n, list.Count);
+            if (n >= list.Count)
+                return;
+            else
+            {
+                var m = list.Count - n;
+                for (int i = 0; i < m; i++)
+                    list.RemoveAt(0);
+            }
+        }
+
         public static string ToString(this List<string> list)
         {
             StringBuilder SB = new StringBuilder();

@@ -17,6 +17,7 @@ namespace Kngine.Threading
                 value.returnValue = f();
                 value.isCompleted = true;
                 value.asyncWaitHandle.Set();
+
             }).BeginInvoke(null, null);
 
             return value;
@@ -95,7 +96,7 @@ namespace Kngine.Threading
 
     public sealed class AsyncValue<A> : IAsyncResult
     {
-        internal bool isCompleted;
+        internal volatile bool isCompleted;
         internal A returnValue;
         internal ManualResetEventSlim asyncWaitHandle;
 

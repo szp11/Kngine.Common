@@ -59,6 +59,7 @@ namespace Kngine.Configuration
         protected Logger(string component, string path, bool autoFlush, FilePeriod filePeriod)
         {
             mPath = path;
+            EnsurePathExist(path);
             mAutoFlush = autoFlush;
             mComponent = component;
             mFilePeriod = filePeriod; 
@@ -66,6 +67,18 @@ namespace Kngine.Configuration
             
             Directory.CreateDirectory(path);
             if (mPath.EndsWith("\\")) mPath = mPath.Substring(0, mPath.Length - 1);
+        }
+
+        private void EnsurePathExist(string path)
+        {
+            try
+            {
+                if (Directory.Exists(path)) return;
+                Directory.CreateDirectory(path);
+            }
+            catch
+            {
+            }
         }
 
         /*/////////////////////////////////////////////////////////////////////////////////////////*/
@@ -182,7 +195,7 @@ namespace Kngine.Configuration
                     for (int i = 0; i < mQueue.Count; i++)
                     {
                         LogItem tmp;
-                        if (mQueue.TryDequeue(out tmp)) tmp.ToRecordString(SB);
+                        if (mQueue.TryDequeue(out tmp)) tmp.AppendLineToStringBuilder(ref SB);
                     }
 
                     File.AppendAllText(fileName, SB.ToString(), new UTF8Encoding());

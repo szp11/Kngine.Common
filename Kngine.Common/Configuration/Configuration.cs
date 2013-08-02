@@ -16,7 +16,7 @@ namespace Kngine.Configuration
     public static class Configer
     {
 
-        public static T LoadFromFile<T>(string fileName, Logger logger = null, bool throwErrors = true)
+        public static T LoadFromFile<T>(string fileName, Logger logger = null, bool throwErrors = false)
             where T : class
         {
 
@@ -26,7 +26,7 @@ namespace Kngine.Configuration
             return R;
         }
 
-        public static void LoadFromFile<T>(string fileName, T obj, Logger logger = null, bool throwErrors = true)
+        public static void LoadFromFile<T>(string fileName, T obj, Logger logger = null, bool throwErrors = false)
             where T : class
         {
             if (!File.Exists(fileName)) return;
@@ -54,7 +54,7 @@ namespace Kngine.Configuration
                 catch (Exception ex)
                 {
                     if (logger != null) logger.Error("Error reading Configuration file (" + fileName + "). Wrong option = (" + key + "), Line number : (" + i + 1 + ").");
-                    if (!throwErrors) throw ex;
+                    if (throwErrors) throw ex;
                 }
             }
         }

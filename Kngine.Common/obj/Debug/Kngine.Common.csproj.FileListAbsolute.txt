@@ -22,8 +22,14 @@ D:\Code\Kngine\Common\Trunk\v 1.1\Kngine.Common\bin\Debug\protobuf-net.dll
 D:\Code\Kngine\Common\Trunk\v 1.1\Kngine.Common\obj\Debug\ResolveAssemblyReference.cache
 D:\Code\Kngine\Common\Trunk\v 1.1\Kngine.Common\obj\Debug\Kngine.Common.dll
 D:\Code\Kngine\Common\Trunk\v 1.1\Kngine.Common\obj\Debug\Kngine.Common.pdb
-J:\Kngine Github\Kngine.Common\v 1.1\Kngine.Common\bin\Debug\Kngine.Common.dll
-J:\Kngine Github\Kngine.Common\v 1.1\Kngine.Common\bin\Debug\Kngine.Common.pdb
-J:\Kngine Github\Kngine.Common\v 1.1\Kngine.Common\obj\Debug\ResolveAssemblyReference.cache
-J:\Kngine Github\Kngine.Common\v 1.1\Kngine.Common\obj\Debug\Kngine.Common.dll
-J:\Kngine Github\Kngine.Common\v 1.1\Kngine.Common\obj\Debug\Kngine.Common.pdb
+F:\Kngine\Common\Trunk\v 1.1\Kngine.Common\bin\Debug\Kngine.Common.dll
+F:\Kngine\Common\Trunk\v 1.1\Kngine.Common\bin\Debug\Kngine.Common.pdb
+F:\Kngine\Common\Trunk\v 1.1\Kngine.Common\bin\Debug\protobuf-net.dll
+F:\Kngine\Common\Trunk\v 1.1\Kngine.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\Kngine\Common\Trunk\v 1.1\Kngine.Common\obj\Debug\Kngine.Common.dll
+F:\Kngine\Common\Trunk\v 1.1\Kngine.Common\obj\Debug\Kngine.Common.pdb
+E:\Documents\GitHub\Kngine.Common\Kngine.Common\bin\Debug\Kngine.Common.dll
+E:\Documents\GitHub\Kngine.Common\Kngine.Common\bin\Debug\Kngine.Common.pdb
+E:\Documents\GitHub\Kngine.Common\Kngine.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Documents\GitHub\Kngine.Common\Kngine.Common\obj\Debug\Kngine.Common.dll
+E:\Documents\GitHub\Kngine.Common\Kngine.Common\obj\Debug\Kngine.Common.pdb

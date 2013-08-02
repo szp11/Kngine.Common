@@ -38,3 +38,11 @@ J:\Kngine Github\Kngine.Common\v 1.1\Test\bin\Debug\Kngine.Common.dll
 J:\Kngine Github\Kngine.Common\v 1.1\Test\bin\Debug\protobuf-net.dll
 J:\Kngine Github\Kngine.Common\v 1.1\Test\bin\Debug\Kngine.Common.pdb
 J:\Kngine Github\Kngine.Common\v 1.1\Test\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Documents\GitHub\Kngine.Common\Test\obj\x86\Debug\Test.exe
+E:\Documents\GitHub\Kngine.Common\Test\obj\x86\Debug\Test.pdb
+E:\Documents\GitHub\Kngine.Common\Test\bin\Debug\Test.exe
+E:\Documents\GitHub\Kngine.Common\Test\bin\Debug\Test.pdb
+E:\Documents\GitHub\Kngine.Common\Test\bin\Debug\Kngine.Common.dll
+E:\Documents\GitHub\Kngine.Common\Test\bin\Debug\protobuf-net.dll
+E:\Documents\GitHub\Kngine.Common\Test\bin\Debug\Kngine.Common.pdb
+E:\Documents\GitHub\Kngine.Common\Test\obj\x86\Debug\ResolveAssemblyReference.cache

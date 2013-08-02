@@ -13,21 +13,6 @@ namespace Kngine.Strings
     {
         public static char[] Delimiters = new char[] { ' ', '\t', '\r', '\n', ',', ',', '.', ';', ':', '\'', '\"', '!', '@', '…', '?', '$', '%', '^', '&', '*', '_', '-', '=', '+', '`', '~', '/', '\\', '(', ')', '[', ']', '{', '}', '<', '>' };
 
-
-        //public static List<string> Tokenize(this string str, bool removeLessThenTwoTokens = false)
-        //{
-        //    var tmp = str.Split(Delimiters, StringSplitOptions.RemoveEmptyEntries);
-
-        //    if (removeLessThenTwoTokens)
-        //    {
-        //        var tmp2 = tmp.ToList();
-        //        tmp2.RemoveAll(o => o.Length < 2);
-        //        return tmp2;
-        //    }
-        //    else
-        //        return tmp.ToList();
-        //}
-
         public static List<string> Tokenize(this string str, bool removeLessThenTwoTokens = false, HashSet<string> wordsToRemove = null)
         {
             var tmp = str.Split(Delimiters, StringSplitOptions.RemoveEmptyEntries);
